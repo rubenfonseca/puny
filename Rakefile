@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "puny"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{Ruby library for the URL shortener service created by SAPO}
     gem.email = "root@cpan.org"
     gem.homepage = "http://github.com/rubenfonseca/puny"
     gem.authors = ["Ruben Fonseca"]

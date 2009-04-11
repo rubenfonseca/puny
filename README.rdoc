@@ -1,6 +1,23 @@
 = puny
 
-Description goes here.
+puny is a Ruby library for the URL shortener service created by SAPO
+
+The puny URL service is available at http://puny.sapo.pt and
+it's API at http://services.sapo.pt/Metadata/Service/PunyURL?culture=EN
+
+== Features
+
+* shortens and expands URLs
+* no external dependencies
+* Ruby 1.8, 1.9 and JRuby compatible
+
+== Example
+
+  require 'puny'
+  puny = Puny.shorten('http://developers.sapo.pt')
+  puts puny.puny # see PunyURL for aditional properties
+  
+  puts Puny.expand(puny.puny) # returns the original URL
 
 == Copyright
 
