@@ -11,6 +11,11 @@ it's API at http://services.sapo.pt/Metadata/Service/PunyURL?culture=EN
 * no external dependencies
 * Ruby 1.8, 1.9 and JRuby compatible
 
+== Install
+
+$ gem sources -a http://gems.github.com
+$ sudo gem install rubenfonseca-puny
+
 == Example
 
   require 'puny'
