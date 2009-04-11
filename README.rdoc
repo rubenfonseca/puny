@@ -5,6 +5,9 @@ puny is a Ruby library for the URL shortener service created by SAPO
 The puny URL service is available at http://puny.sapo.pt and
 it's API at http://services.sapo.pt/Metadata/Service/PunyURL?culture=EN
 
+The code is a translation of the Python library wrote by Celso Pinto 
+and available at http://github.com/cpinto/punypie/tree/master
+
 == Features
 
 * shortens and expands URLs
