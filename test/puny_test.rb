@@ -44,4 +44,8 @@ class PunyTest < Test::Unit::TestCase
     assert_equal Puny.expand('http://漭.sl.pt'), 'http://developers.sapo.pt/'
     assert_equal Puny.expand('http://b.ot.sl.pt'), 'http://developers.sapo.pt/'
   end
+  
+  def test_smoke
+    assert_equal 100.times { Puny.shorten('http://developers.sapo.pt') }, 100
+  end
 end

@@ -36,7 +36,7 @@ class Puny
   #   puts puny.url
   #
   def self.shorten(url)
-    url = TO_PUNY << '?url=' << CGI.escape(url)
+    url = TO_PUNY + '?url=' + CGI.escape(url)
     _process_response(open(url))
   end
   
@@ -51,7 +51,7 @@ class Puny
   #   puts Puny.expand('http://b.ot.sl.pt')
   #
   def self.expand(url)
-    url = FROM_PUNY << '?url=' << CGI.escape(url)
+    url = FROM_PUNY + '?url=' + CGI.escape(url)
     p = _process_response(open(url))
     p.url
   end
